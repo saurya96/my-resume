@@ -59,10 +59,9 @@ function Home() {
       <section className="section">
         <h2>PROFESSIONAL SUMMARY</h2>
         <p className="summary-text">
-          Motivated Full Stack Developer with expertise in MERN stack, RESTful API development, and responsive web applications. 
-          Currently pursuing BCA at Eternal University with a strong academic record (CGPA: 9.1/10). Proficient in modern JavaScript 
-          frameworks, database management, and cloud deployment. Passionate about writing clean, maintainable code and implementing 
-          best practices in software development. Strong foundation in Data Structures, Algorithms, and Object-Oriented Programming.
+          Full Stack Developer with expertise in MERN stack, RESTful APIs, and responsive web applications. 
+          Pursuing BCA at Eternal University (CGPA: 9.1/10). Proficient in React.js, Node.js, MongoDB, and cloud deployment.
+          Strong foundation in DSA, OOP, and software development best practices.
         </p>
       </section>
 
