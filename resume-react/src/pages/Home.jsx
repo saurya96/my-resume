@@ -92,17 +92,17 @@ function Home() {
       {/* PROJECTS */}
       <section className="section">
         <h2>PROJECTS</h2>
-        <div className="projects-list">
+        <div className="projects-list-clean">
           {projects.map((p) => (
-            <div className="project-card" key={p.id}>
-              <div className="project-top">
-                <h3><Link to={`/project/${p.id}`}>{p.title}</Link></h3>
-                <a href={p.link} target="_blank" rel="noopener noreferrer" className="view-btn">View Project ↗</a>
+            <div className="project-row" key={p.id}>
+              <div className="project-info">
+                <h3>
+                  <Link to={`/project/${p.id}`}>{p.title}</Link>
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link">↗</a>
+                </h3>
+                <span className="project-tech-inline">{p.tech}</span>
               </div>
-              <p className="project-desc">{p.description}</p>
-              <div className="project-tech-tags">
-                {p.tech.split(', ').map((t, i) => <span key={i} className="tech-tag">{t}</span>)}
-              </div>
+              <p className="project-desc-clean">{p.description}</p>
             </div>
           ))}
         </div>

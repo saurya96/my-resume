@@ -123,85 +123,70 @@ body {
   color: #475569;
 }
 
-/* Projects List - Professional Cards */
-.projects-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
+/* Projects List - Clean Style */
+.projects-list-clean {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.project-card {
-  padding: 0.75rem 1rem;
-  background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #e2e8f0;
-  transition: all 0.2s ease;
+.project-row {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #f1f5f9;
 }
 
-.project-card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+.project-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-.project-top {
+.project-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.4rem;
+  align-items: baseline;
+  margin-bottom: 0.2rem;
 }
 
-.project-top h3 {
+.project-info h3 {
   font-size: 0.9rem;
   font-weight: 600;
   color: #0f172a;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.project-top h3 a {
+.project-info h3 a:first-child {
   color: #0f172a;
   text-decoration: none;
 }
 
-.project-top h3 a:hover {
+.project-info h3 a:first-child:hover {
   color: #2563eb;
 }
 
-.view-btn {
-  font-size: 0.7rem;
-  color: #0f172a;
+.project-link {
+  font-size: 0.75rem;
+  color: #64748b;
   text-decoration: none;
-  padding: 0.2rem 0.5rem;
-  background: #f1f5f9;
-  border-radius: 4px;
-  font-weight: 500;
-  white-space: nowrap;
 }
 
-.view-btn:hover {
-  background: #0f172a;
-  color: white;
+.project-link:hover {
+  color: #0f172a;
 }
 
-.project-desc {
-  font-size: 0.78rem;
+.project-tech-inline {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.project-desc-clean {
+  font-size: 0.8rem;
   color: #475569;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.4;
-}
-
-.project-tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-.tech-tag {
-  font-size: 0.65rem;
-  padding: 0.15rem 0.4rem;
-  background: #f1f5f9;
-  color: #475569;
-  border-radius: 3px;
-  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Education */
