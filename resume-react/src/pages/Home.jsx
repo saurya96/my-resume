@@ -101,7 +101,7 @@ function Home() {
               </div>
               <p className="project-desc">{p.description}</p>
               <div className="project-tech-tags">
-                {p.tech.split(', ').map((t, i) => <span key={i} className="tech-tag">{t}</span>)}i} className="tech-tag">{t}</span>)}
+                {p.tech.split(', ').map((t, i) => <span key={i} className="tech-tag">{t}</span>)}
               </div>
             </div>
           ))}
