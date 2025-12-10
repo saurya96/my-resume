@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "resume-react/dist",
+  "installCommand": "npm install",
+  "framework": "vite"
+}
